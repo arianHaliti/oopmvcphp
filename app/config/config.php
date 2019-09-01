@@ -9,7 +9,10 @@ define('DB_NAME', 'oopmvc');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //Url Root
-define('URLROOT', 'http://localhost/oopmvc');
+define('URLROOT', 'http://localhost/sharepost');
 
 //Site Name
-define('SITENAME', 'OOP MVC');
+define('SITENAME', 'SharePost');
+
+// APP VERSION
+define('APPVERSION', '1.0.0');

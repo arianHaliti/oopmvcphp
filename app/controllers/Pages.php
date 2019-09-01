@@ -10,11 +10,16 @@ class Pages extends Controller
 
       $data = [
          'title' => 'Home',
+         'description' => ' Simple socila media'
       ];
       $this->view("pages/index", $data);
    }
    public function about()
    {
-      $this->view("pages/about");
+      $data = [
+         'title' => 'About',
+         'description' => ' Share post with other users'
+      ];
+      $this->view("pages/about", $data);
    }
 }
