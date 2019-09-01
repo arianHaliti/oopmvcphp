@@ -25,6 +25,17 @@ class User
       return false;
    }
 
+   // Find user by ID
+   public function getUserByID($id)
+   {
+      $this->db->query("SELECT * FROM users WHERE id = :id");
+      $this->db->bind(':id', $id);
+
+      $row = $this->db->single();
+
+      return $row;
+   }
+
    // Register User
    public function register($data)
    {
